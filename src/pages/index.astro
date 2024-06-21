@@ -12,6 +12,7 @@ const subdomains: string[] = [
     <title>Devessier.fr Index</title>
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href="https://devessier.fr" />
   </head>
   <body>
     <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 py-8">
@@ -26,10 +27,7 @@ const subdomains: string[] = [
         {
           subdomains.map((subdomain) => (
             <li>
-              <a
-                href={subdomain}
-                class="hover:underline text-red-700"
-              >
+              <a href={subdomain} class="hover:underline text-red-700">
                 {subdomain}
               </a>
             </li>
